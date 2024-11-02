@@ -15,7 +15,7 @@ from config import ADMINS, OWNER_ID, FORCE_MSG, START_MSG, CUSTOM_CAPTION, DISAB
 from helper_func import subscribed1, subscribed2, encode, decode, get_messages
 from database.database import add_user, del_user, full_userbase, present_user
 async def delete_after_delay(message: Message, delay):
-    await asyncio.sleep(1800)
+    await asyncio.sleep(10800)
     await message.delete()
 
 import pyrogram.utils
